@@ -16,7 +16,7 @@ def home():
 
 @app.route('/boston-predict', methods=['GET','POST'])
 
-def boston-predict:
+def predict:
     data= request.json['data']
     print(data)
     print(np.array(list(data.values())).reshape(1,-1))
