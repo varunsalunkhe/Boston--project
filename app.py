@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 import numpy as np
-import flask as Flask, app, request, jsonify, url_for, render_template
+import flask as Flask, request, jsonify, aap, url_for, render_template
 
 app =Flask(__name__)
 
@@ -17,7 +17,7 @@ def home():
 @app.route('/boston-predict', methods=['GET','POST'])
 
 def predict():
-    data= request.json['data']
+    data = request.json['data']
     print(data)
     print(np.array(list(data.values())).reshape(1,-1))
     new_data= scale.transform(np.array(list(data.values())).reshape(1,-1))
