@@ -1,7 +1,8 @@
 import joblib
 import pandas as pd
 import numpy as np
-import flask as Flask, request, jsonify, aap, url_for, render_template
+from flask import Flask, jsonify, app,  render_template
+from flask import request
 
 app =Flask(__name__)
 
