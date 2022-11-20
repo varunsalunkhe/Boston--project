@@ -63,3 +63,5 @@ joblib.dump(model,"model.pkl")
 
 joblib.dump(scale,'scale.pkl')
 
+
+
