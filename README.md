@@ -1,3 +1,3 @@
 # Boston--project
-Predecting house prize in Boston
+I have buid a model which can predict house prize in Boston.
 
